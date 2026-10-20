@@ -40,7 +40,7 @@ export default function Menu() {
               key={category.id}
               className="flex flex-col gap-4 p-5 rounded-3xl bg-surface-container-low shadow-sm"
             >
-              <div className="flex items-center justify-between pb-3">
+              <div className="flex items-center justify-between gap-3 pb-3 lg:flex-col lg:items-start lg:gap-2 xl:flex-row xl:items-center xl:gap-3">
                 <div className="flex items-center gap-2.5">
                   <Icon
                     name={category.icon}
@@ -49,7 +49,7 @@ export default function Menu() {
                   <h3 className="font-headline-sm text-headline-sm text-on-surface">{category.title}</h3>
                 </div>
                 <span
-                  className={`font-label-sm text-label-sm uppercase px-2.5 py-0.5 rounded-full ${accent[category.accent].badge}`}
+                  className={`shrink-0 whitespace-nowrap font-label-sm text-label-sm uppercase px-2.5 py-0.5 rounded-full ${accent[category.accent].badge}`}
                 >
                   {category.badge}
                 </span>
